@@ -29,7 +29,7 @@ end
 -- Registering the command
 
 RegisterCommand('sspawnvehicle', function(src, args)
-    if source ~= 0 then return end
+    if src ~= 0 then return end
     local model = args[1]
     if type(model) ~= "string" then return end
 
