@@ -28,8 +28,8 @@ end
 
 -- Registering the command
 
-RegisterCommand('sspawnvehicle', function(src, args)
-    if src ~= 0 then return end
+RegisterCommand('spawnvehicle', function(src, args)
+    if src == 0 then return end
     local model = args[1]
     if type(model) ~= "string" then return end
 
