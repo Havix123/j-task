@@ -23,7 +23,7 @@ local function spawnVehicle(src, modelName)
         body = 1000,
         engine = 1000,
     }
-    Entity(car).state:set('vehicleProperties', vehicleProperties)
+    Entity(car).state:set('vehicleProperties', vehicleProperties, true)
 end
 
 -- Registering the command
